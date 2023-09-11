@@ -14,6 +14,7 @@ esc_script = "res://game/rooms/room01/esc/right_exit.esc"
 is_exit = true
 tooltip_name = "Exit"
 default_action = "walk"
+combine_when_selected_action_is_in = [  ]
 dialog_color = Color( 1, 1, 1, 1 )
 animations = null
 

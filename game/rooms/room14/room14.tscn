@@ -87,7 +87,6 @@ global_id = "r12_l_exit"
 [node name="r_door" parent="Hotspots" instance=ExtResource( 8 )]
 global_id = "r14_r_exit"
 esc_script = "res://game/rooms/room14/esc/right_exit.esc"
-combine_when_selected_action_is_in = [  ]
 
 [node name="ESCLocation" type="Position2D" parent="Hotspots/r_door"]
 position = Vector2( 1231.78, 360.624 )
@@ -98,7 +97,6 @@ position = Vector2( 243.677, 455.569 )
 script = ExtResource( 5 )
 global_id = "start"
 is_start_location = true
-interaction_direction = 180
 
 [node name="show_main_menu" parent="." instance=ExtResource( 9 )]
 global_id = "button_main_menu"
@@ -134,6 +132,25 @@ margin_top = 194.216
 margin_right = 413.915
 margin_bottom = 242.216
 text = "Show pause menu"
+align = 1
+
+[node name="show_main_menu2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 105, 109 )
+global_id = "button_cutscene"
+esc_script = "res://game/rooms/room14/esc/button_cutscene.esc"
+tooltip_name = "Cutscene Button"
+combine_when_selected_action_is_in = [  ]
+
+[node name="ESCLocation" type="Position2D" parent="show_main_menu2"]
+position = Vector2( 343.887, 381.305 )
+script = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="show_main_menu2"]
+margin_left = 285.569
+margin_top = 194.216
+margin_right = 408.569
+margin_bottom = 259.216
+text = "Trigger cutscene"
 align = 1
 
 [node name="worker" parent="." instance=ExtResource( 10 )]

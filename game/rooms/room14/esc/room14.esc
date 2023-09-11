@@ -44,4 +44,5 @@
 	queue_event worker moveworker _queuedemo true
 	queue_event worker2 moveworker2 _queuedemo
 
-	
+:test_event
+say player "Testing queue_event on a room."

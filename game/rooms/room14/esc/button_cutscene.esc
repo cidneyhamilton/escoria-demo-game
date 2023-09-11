@@ -1,0 +1,5 @@
+:look
+	say player "button to trigger a cutscene"
+
+:use
+	queue_event room14 test_event
